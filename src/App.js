@@ -1,30 +1,33 @@
 import React from 'react'
 import Accordion from './components/Accordion'
+import Search from './components/Search'
 
 
 const items = [
     {
-
-        title: 'title 1',
+        title: 'What is react?',
         content: 'The first description'
     },
     {
 
-        title: 'title 2',
+        title: 'Why use React?',
         content: 'The second description'
     },
     {
 
-        title: 'title 3',
+        title: 'How do you use React?',
         content: 'The third description'
     }
 
 ]
 
+
+/*<Accordion items={items} />*/ 
+
 const App = () => {
     return (
         <div>
-            <Accordion items={items} />
+            <Search/>
         </div>
     )
 }
